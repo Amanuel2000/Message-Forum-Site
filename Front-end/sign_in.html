@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Messages Forum</title>
+		<!-- CSS Style -->
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Javascript -->
+		<script
+			src="https://kit.fontawesome.com/c4254e24a8.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- Navigation section -->
+		<div id="header">
+			<div class="nav-bar">
+				<nav>
+					<a href="index.html"><h1>MessagesForum</h1></a>
+					<ul id="sidemenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="messages.html">Messages</a></li>
+						<li><a href="sign_in.html">Sign In</a></li>
+						<li><a href="sign_up.html">Sign Up</a></li>
+						<i class="fas fa-times" onclick="closemenu()"></i>
+					</ul>
+					<i class="fas fa-bars" onclick="openmenu()"></i>
+				</nav>
+			</div>
+		</div>
+
+        <!-- Sign In form -->
+		<div id="signin-page">
+			<div class="container">
+				<div class="form signup">
+					<h2>Sign In</h2>
+					<div class="inputBox">
+						<input type="text" required>
+						<i class="fa-solid fa-user"></i>
+						<span>Username</span>
+					</div>
+					<div class="inputBox">
+						<input type="password" required>
+						<i class="fa-solid fa-lock"></i>
+						<span>Create password</address></span>
+					</div>
+					<div class="inputBox">
+						<input type="submit" value="Sing In">
+					</div>
+					<div class="signup_link">
+						Not a member? <a href="sign_up.html">Sign Up</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Footer section - The copyright info -->
+		<div class="footer-bottom">
+			<div class="footer-bottom__copyright">
+				&COPY; Copyright 2023
+				<a href="#">Messages Forum</a> | Created by Amanuel, Anania and Elias
+			</div>
+		</div>
+
+		<!-- Javascript -->
+		<script>
+			var tablinks = document.getElementsByClassName('tab-links');
+			var tabcontents = document.getElementsByClassName('tab-contents');
+			function opentab(tabname) {
+				for (tablink of tablinks) {
+					tablink.classList.remove('active-link');
+				}
+				for (tabcontent of tabcontents) {
+					tabcontent.classList.remove('active-tab');
+				}
+				event.currentTarget.classList.add('active-link');
+				document.getElementById(tabname).classList.add('active-tab');
+			}
+		</script>
+		<!-- media queries menu -->
+		<script>
+			var sidemenu = document.getElementById('sidemenu');
+			function openmenu() {
+				sidemenu.style.right = '0';
+			}
+			function closemenu() {
+				sidemenu.style.right = '-200px';
+			}
+		</script>
+	</body>
+</html>

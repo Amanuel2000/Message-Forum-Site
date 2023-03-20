@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Messages Forum</title>
+		<!-- CSS Style -->
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Javascript -->
+		<script
+			src="https://kit.fontawesome.com/c4254e24a8.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- Navigation section -->
+		<div id="header">
+			<div class="nav-bar">
+				<nav>
+					<a href="index.html"><h1>MessagesForum</h1></a>
+					<ul id="sidemenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="messages.html">Messages</a></li>
+						<li><a href="sign_in.html">Sign In</a></li>
+						<li><a href="sign_up.html">Sign Up</a></li>
+						<i class="fas fa-times" onclick="closemenu()"></i>
+					</ul>
+					<i class="fas fa-bars" onclick="openmenu()"></i>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Home page section -->
+		<div id="home-page">
+			<div class="container">
+				<div class="msg">
+					<div class="left">Message</div>
+					<div class="right">
+						<div class="msg-search">
+							<div class="inputBox">
+								<input
+									type="text"
+									placeholder="Search message"
+								/>
+								<button>Search</button>
+							</div>
+						</div>
+						<div class="msg-display">
+							<div>
+								<img src="/Front-end/Images/Aman.jpg" alt="user image" />
+							</div>
+							<div class="msg-body">
+								<h3>Message Title</h3>
+								<p>
+									This is the message that will posted for
+									discussion
+								</p>
+							</div>
+							<div class="msg-react">
+								<div class="num-views">
+									<form action="">
+										<label for="">0</label>
+										<a href="">
+											<i class="fa-solid fa-eye"></i>
+										</a>
+									</form>
+								</div>
+								<div class="num-likes">
+									<form action="">
+										<label for="">0</label>
+										<a href="">
+											<i
+												class="fa-solid fa-thumbs-up"
+											></i>
+										</a>
+									</form>
+								</div>
+								<div class="num-comments">
+									<form action="">
+										<label for="">0</label>
+										<a href="">
+											<i class="fa-solid fa-comment"></i>
+										</a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="msg-display">
+							<div>
+								<img
+									src="/Front-end/Images/Elias Dewa.JPG"
+									alt="user image"
+								/>
+							</div>
+							<div class="msg-body">
+								<h3>Message Title</h3>
+								<p>
+									This is the message that will posted for
+									discussion
+								</p>
+							</div>
+							<div class="msg-react">
+								<div class="num-views">
+									<form action="">
+										<label for="">0</label>
+										<a href="">
+											<i class="fa-solid fa-eye"></i>
+										</a>
+									</form>
+								</div>
+								<div class="num-likes">
+									<form action="">
+										<label for="">0</label>
+										<a href="">
+											<i
+												class="fa-solid fa-thumbs-up"
+											></i>
+										</a>
+									</form>
+								</div>
+								<div class="num-comments">
+									<form action="">
+										<label for="">0</label>
+										<a href="">
+											<i class="fa-solid fa-comment"></i>
+										</a>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="msg-display">
+							<div>
+								<img src="/Front-end/Images/Anania.jpg" alt="user image" />
+							</div>
+							<div class="msg-body">
+								<h3>Message Title</h3>
+								<p>
+									This is the message that will posted for
+									discussion
+								</p>
+							</div>
+							<div class="msg-react">
+								<div class="num-views">
+									<form action="">
+										<label for="">0</label>
+										<a href="">
+											<i class="fa-solid fa-eye"></i>
+										</a>
+									</form>
+								</div>
+								<div class="num-likes">
+									<form action="">
+										<label for="">0</label>
+										<a href="">
+											<i
+												class="fa-solid fa-thumbs-up"
+											></i>
+										</a>
+									</form>
+								</div>
+								<div class="num-comments">
+									<form action="">
+										<label for="">0</label>
+										<a href="">
+											<i class="fa-solid fa-comment"></i>
+										</a>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div class="msg-nav">
+							<form action="">
+								<button class="btn-prev">Prev</button>
+								<label for="">1</label>
+								<label for="">2</label>
+								<label for="">3</label>
+								<button class="btn-next">Next</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer section - The copyright info -->
+		<div class="footer-bottom">
+			<div class="footer-bottom__copyright">
+				&COPY; Copyright 2023
+				<a href="#">Messages Forum</a> | Created by Amanuel, Anania and
+				Elias
+			</div>
+		</div>
+
+		<!-- Javascript -->
+		<script>
+			var tablinks = document.getElementsByClassName('tab-links');
+			var tabcontents = document.getElementsByClassName('tab-contents');
+			function opentab(tabname) {
+				for (tablink of tablinks) {
+					tablink.classList.remove('active-link');
+				}
+				for (tabcontent of tabcontents) {
+					tabcontent.classList.remove('active-tab');
+				}
+				event.currentTarget.classList.add('active-link');
+				document.getElementById(tabname).classList.add('active-tab');
+			}
+		</script>
+		<!-- media queries menu -->
+		<script>
+			var sidemenu = document.getElementById('sidemenu');
+			function openmenu() {
+				sidemenu.style.right = '0';
+			}
+			function closemenu() {
+				sidemenu.style.right = '-200px';
+			}
+		</script>
+	</body>
+</html>
