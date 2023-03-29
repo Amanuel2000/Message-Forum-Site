@@ -1,10 +1,8 @@
 # Discussion and Message Forum Site
 
 ## Description
-- Forums are a powerful way of communication between large number of individuals and it has been 
-used in social media apps and other mass populous communication mediums. 
-- Forums nowadays have a problem of being too massive with different sub forums with different topics that it has 
-gotten hard to use especially the famous ones. 
+- Forums are a powerful way of communication between large number of individuals and it has been used in social media apps and other mass populous communication mediums. 
+- Forums nowadays have a problem of being too massive with different sub forums with different topics that it has gotten hard to use especially the famous ones. 
 
 - The final outcome of the project creates a forum site that is specific to a certain topic and there are no groupings that create echo chambers.
 
