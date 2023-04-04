@@ -150,3 +150,12 @@ The Comments are mapped to Comments Table. Comment Votes are mapped to CommentVo
 
 ### Admin Area
 <img src="static/images/admin area.JPG">
+
+ 
+# Author :pen:
+
+[Amanuel Fenta Dejen](https://amanuel2000.github.io/)
+
+[Linkedin](https://www.linkedin.com/in/amanuel-fenta-a4683a215/)
+
+[Twitter](https://twitter.com/amanuel_Fenta2/)
