@@ -127,3 +127,26 @@ The Comments are mapped to Comments Table. Comment Votes are mapped to CommentVo
 
 ### Sign Up
 <img src="static/images/Sign up.JPG">
+
+### Dashboard
+<img src="static/images/Dashboard.JPG">
+
+### All Messages
+<img src="static/images/all-posts.JPG">
+
+
+### Single Post
+<img src="static/images/Single-post.JPG">
+
+### Add Messages
+<img src="static/images/Add-Post.JPG">
+
+### Add User
+<img src="static/images/add-user.JPG">
+
+### About
+<img src="static/images/About.JPG">
+
+
+### Admin Area
+<img src="static/images/admin area.JPG">
