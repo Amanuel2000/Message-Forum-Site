@@ -119,4 +119,11 @@ The frameworks mentioned are all open source and free to use and are updated reg
 The Comments are mapped to Comments Table. Comment Votes are mapped to CommentVotes Table. Messages are mapped to Messages Table. Message Votes are mapped to MessageVotes Table. User are mapped to Users Table. Message Views are mapped to MessageViews Table.
 
 ## Screen Images
+### Home Page
+<img src="static/images/Home Page.JPG">
 
+### Login
+<img src="static/images/login.JPG">
+
+### Sign Up
+<img src="static/images/Sign up.JPG">
