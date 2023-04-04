@@ -1,5 +1,5 @@
 # Discussion and Message Forum Site
-
+<img src="image1.JPG">
 ## Description
 - Forums are a powerful way of communication between large number of individuals and it has been used in social media apps and other mass populous communication mediums. 
 - Forums nowadays have a problem of being too massive with different sub forums with different topics that it has gotten hard to use especially the famous ones. 
