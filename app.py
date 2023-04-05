@@ -62,7 +62,7 @@ def admin():
     if id == 17:
         return render_template("admin.html")
     else:
-        flash("Sorry you must be the admin to access this Admin page...")
+        flash("Sorry, you must be the admin to access this Admin page...")
         return redirect(url_for("dashboard"))
 
 # Create Search Function
@@ -120,12 +120,12 @@ def login():
             # Check the hash
             if check_password_hash(user.password_hash, form.password.data):
                 login_user(user)
-                flash("Login Succesfull!!")
+                flash("Login Successfully!")
                 return redirect(url_for('dashboard'))
             else:
                 flash("Wrong Password - Try Again!")
         else:
-            flash("That User Doesn't Exist! Try Again...")
+            flash("This User Doesn't Exist! Try Again...")
     return render_template('login.html', form=form)
 
 # Create Logout Page
@@ -135,7 +135,7 @@ def login():
 @login_required
 def logout():
     logout_user()
-    flash("You Have Been Logged Out!  Thanks For Stopping By...")
+    flash("You Have Been Logged Out! Thanks For Stopping By...")
     return redirect(url_for('login'))
 
 # Create Dashboard Page
@@ -173,7 +173,7 @@ def dashboard():
                                        form=form,
                                        name_to_update=name_to_update)
             except:
-                flash("Error!   Looks like there was a problem")
+                flash("Error! Looks like there was a problem...")
                 return render_template("dashboard.html",
                                        form=form,
                                        name_to_update=name_to_update)
@@ -195,7 +195,7 @@ def dashboard():
 # Forum posts
 @app.route('/posts')
 def posts():
-    # Grab all the posts fromt he database
+    # Grab all the posts from the database
     posts = Posts.query.order_by(Posts.date_posted)
     return render_template("posts.html", posts=posts)
 
@@ -219,23 +219,22 @@ def delete_post(id):
             db.session.commit()
 
             # return a message
-            flash("Message post was delted Successfully")
-
-            # Grab all the posts fromt he database
+            flash("Message post was deleted successfully")
+            # Grab all the posts from the database
             posts = Posts.query.order_by(Posts.date_posted)
             return render_template("posts.html", posts=posts)
         except:
             # Return an Error
-            flash("Whoops! There was a problem deleting post, try again...")
+            flash("Whoops! There was a problem deleting post, Try again...")
 
-            # Grab all the posts fromt he database
+            # Grab all the posts from the database
             posts = Posts.query.order_by(Posts.date_posted)
             return render_template("posts.html", posts=posts)
     else:
         # return a message
-        flash("You aren't authorized to delete that post")
+        flash("You aren't authorized to delete this post")
 
-        # Grab all the posts fromt he database
+        # Grab all the posts from the database
         posts = Posts.query.order_by(Posts.date_posted)
         return render_template("posts.html", posts=posts)
 
@@ -279,7 +278,7 @@ def edit_post(id):
         return render_template('edit_post.html', form=form)
     else:
         flash("You aren't authorized to edit this post ...")
-        # Grab all the posts fromt he database
+        # Grab all the posts from the database
         posts = Posts.query.order_by(Posts.date_posted)
         return render_template("posts.html", posts=posts)
 
@@ -328,13 +327,13 @@ def delete(id):
                                    name=name,
                                    our_users=our_users)
         except:
-            flash("Whoops! there was a problem delting a user, try again ...")
+            flash("Whoops! There was a problem deleting a user, Try again ...")
             return render_template("add_user.html",
                                    form=form,
                                    name=name,
                                    our_users=our_users)
     else:
-        flash("Whoops! Sorry you can't delete that user ...")
+        flash("Sorry, you can't delete this user ...")
         return redirect(url_for('dashboard'))
 
 
@@ -355,7 +354,7 @@ def update(id):
             flash("User Updated Successfully!")
             return render_template("update.html", form=form, name_to_update=name_to_update, id=id)
         except:
-            flash("Error!  Looks like there was a problem...try again!")
+            flash("Error! Looks like there was a problem...Try again!")
             return render_template("update.html",
                                    form=form,
                                    name_to_update=name_to_update,
@@ -393,12 +392,12 @@ def add_user():
                            name=name,
                            our_users=our_users)
 
-# creat a route decorator
+# create a route decorator
 
 
 @app.route('/')
 def index():
-    # first_name = "Jhon"
+    # first_name = "John"
     # stuff = "This is <strong> Bold </strong> Text"
     # favorite_pizza = ["pepperoni", "Cheese", "Mushrooms", 41]
     return render_template("index.html",)
@@ -507,7 +506,7 @@ class Users(db.Model, UserMixin):
 
     @property
     def password(self):
-        raise AttributeError('password is not a readble attribute!')
+        raise AttributeError('password is not a readable attribute!')
 
     @password.setter
     def password(self, password):
