@@ -5,10 +5,20 @@ h1{
 }
 body{
     background: #f4f4f4;
-    
 }
 
 #demo{
     font-size: 25px;
     color: darkblue;
+}
+
+.img-logo {
+    height: 80px;
+    object-fit: cover;
+}
+
+i {
+    font-size: 20px;
+    margin: 2px;
+    padding: 5px;
 }

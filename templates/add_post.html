@@ -28,9 +28,14 @@ get_flashed_messages() %}
   {{ ckeditor.load() }} {{ ckeditor.config(name='content') }}
 </div>
 {%else%}
-<h2>Must be Looged In...</h2>
-<p>Sorry, You must be logged in to access this page!</p>
 
-<a href="{{url_for('login')}}"> Login Here </a>
+<div class="card mb-3">
+  <div class="row row-cols-1 no-gutters text-center p-4">
+    <h2>Must be Logged In...</h2>
+    <p>Sorry, You must be logged in to access this page!</p>
+
+    <a href="{{url_for('login')}}"> Login Here </a>
+  </div>
+</div>
 
 {%endif%} {% endblock %}

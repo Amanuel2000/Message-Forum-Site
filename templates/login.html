@@ -15,7 +15,7 @@ get_flashed_messages() %}
 <div class="vh-100 d-flex justify-content-center align-items-center">
   <div class="col-md-6 p-5 shadow-sm border rounded-3 align-items-center">
     <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
-      <h2 class="text-center mb-4 text-primary">Login</h2>
+      <h2 class="text-center mb-4 text-primary">Log In</h2>
 
       <form method="POST">
         {{ form.hidden_tag() }} {{ form.username.label(class="form-label") }} {{
@@ -26,7 +26,7 @@ get_flashed_messages() %}
         form.password(class="form-control") }}
         <br />
 
-        {{form.submit (class = "btn btn-secondary")}} Don't have an account
+        {{form.submit (class = "btn btn-secondary")}} Don't have an account ?
         <a href="{{url_for('register')}}"> Sign Up </a>
       </form>
     </div>

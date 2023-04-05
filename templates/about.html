@@ -1,144 +1,166 @@
 {% extends 'base.html' %} {% block content %}
-<h2>Developer's Area</h2>
+<h2 class="text-center mt-2 pb-2">Developer's Area</h2>
+<!-- backend -->
 <div class="shadow p-3 mb-5 bg-body rounded">
-  <h4>Backend is Developed by</h4>
-  <div class="card mb-3">
-    <div class="row no-gutters">
-      <div class="col-md-1">
-        <br />
-        <img
-          src="{{ url_for('static', filename='images/Aman.jpg')}}"
-          width="100"
-          align="left"
-          class="rounded-circle"
-        />
-      </div>
-
-      <div class="col-md-10">
-        <div class="card-body">
-          <h5 class="card-title">Amanuel Fenta</h5>
-          <p class="card-text">amanuelf44@gmail.com</p>
-          <p class="card-text">https://github.com/amanuel2000/</p>
-          <p class="card-text">Software Engineering Trainee @alx_africa</p>
+  <h4>Backend is developed by</h4>
+  <div class="row">
+    <div class="col-3">
+      <div class="card mb-3">
+        <div class="container text-center">
+          <div class="row row-cols-1 no-gutters">
+            <div class="col">
+              <img
+                src="{{ url_for('static', filename='images/Aman.jpg')}}"
+                width="200"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col">
+              <h5 class="card-title">Amanuel Fenta</h5>
+            </div>
+            <div class="col">
+              <p class="card-text">Software Engineering Trainee @<a href="https://www.alxafrica.com/">alxafrica</a></p>
+            </div>
+            <div class="col">
+              <a href="amanuelf44@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://github.com/amanuel2000" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="col-9">
+      <p>
+        A Passionate about techs.What inspired me to do the project... This project
+        is inspiring because this is how people are going to interact wth each other
+        and reflect their ideas about it. I have been meaning to do this project
+        long time ago. Forums nowadays have a problem of being too massive with
+        different sub forums with different topics that it has gotten hard to use
+        especially the famous ones. Social media forums also have a grouping system
+        that puts similar people with similar opinions on the same group which
+        creates echo chambers where only similar opinions between the groups are
+        shared, which is not a good way of discussion since discussion is very
+        useful when different opinions communicate with each other. On this paper
+        the final outcome of the project creates a forum site that is specific to a
+        certain topic and there are no groupings that create echo chambers. The site
+        tries to help on the mentioned problems by being useful to communicate
+        openly with different idea people and to have a shared understandable
+        knowledge between the different groups.
+      </p>
+    </div>
   </div>
 </div>
+<!-- end of backend -->
 
-<div class="shadow p-3 mb-5 bg-body rounded">
-  <p>
-    A Passionate about techs.What inspired me to do the project... This project
-    is inspiring becuase this is how people are going to interact wth each other
-    and reflect their ideas about it. I have been meaning to do this project
-    long time ago. Forums nowadays have a problem of being too massive with
-    different sub forums with different topics that it has gotten hard to use
-    especially the famous ones. Social media forums also have a grouping system
-    that puts similar people with similar opinions on the same group which
-    creates echo chambers where only similar opinions between the groups are
-    shared, which is not a good way of discussion since discussion is very
-    useful when different opinions communicate with each other. On this paper
-    the final outcome of the project creates a forum site that is specific to a
-    certain topic and there are no groupings that create echo chambers. The site
-    tries to help on the mentioned problems by being useful to communicate
-    openly with different idea people and to have a shared understandable
-    knowledge between the different groups.
-  </p>
-</div>
-
+<!-- Frontend -->
 <div class="shadow p-3 mb-5 bg-body rounded">
   <h4>Frontend is developed by</h4>
-  <div class="card mb-3">
-    <div class="row no-gutters">
-      <div class="col-md-1">
-        <br />
-        <img
-          src="{{ url_for('static', filename='images/Elias.jpg')}}"
-          width="100"
-          align="left"
-          class="rounded-circle"
-        />
-      </div>
-
-      <div class="col-md-10">
-        <div class="card-body">
-          <h5 class="card-title">Elias Dewa</h5>
-          <p class="card-text">eliasdeewa3@gmail.com</p>
-          <p class="card-text">https://github.com/elias-Dewa/</p>
-          <p class="card-text">Software Engineering Trainee @alx_africa</p>
+  <div class="row">
+    <div class="col-3">
+      <div class="card mb-3">
+        <div class="container text-center">
+          <div class="row row-cols-1 no-gutters">
+            <div class="col">
+              <img
+                src="{{ url_for('static', filename='images/Elias.jpg')}}"
+                width="200"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col">
+              <h5 class="card-title">Elias Dewa</h5>
+            </div>
+            <div class="col">
+              <p class="card-text">Software Engineering Trainee @<a href="https://www.alxafrica.com/">alxafrica</a></p>
+            </div>
+            <div class="col">
+              <a href="eliasdewa3@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://github.com/Elias-Dewa" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/eliasdewa14" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.twitter.com/eliasdewa14" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="shadow p-3 mb-5 bg-body rounded">
-  <p>
-    A Passionate about techs.What inspired me to do the project... This project
-    is inspiring becuase this is how people are going to interact wth each other
-    and reflect their ideas about it. I have been meaning to do this project
-    long time ago Forums are a powerful way of communication between large
-    number of individuals and it has been used in social media apps and other
-    mass populous communication mediums. Forums nowadays have a problem of being
-    too massive with different sub forums with different topics that it has
-    gotten hard to use especially the famous ones. Social media forums also have
-    a grouping system that puts similar people with similar opinions on the same
-    group which creates echo chambers where only similar opinions between the
-    groups are shared, which is not a good way of discussion since discussion is
-    very useful when different opinions communicate with each other. On this
-    paper the final outcome of the project creates a forum site that is specific
-    to a certain topic and there are no groupings that create echo chambers. The
-    site tries to help on the mentioned problems by being useful to communicate
-    openly with different idea people and to have a shared understandable
-    knowledge between the different groups.
-  </p>
-</div>
-<div class="shadow p-3 mb-5 bg-body rounded">
-  <h4>Database is devloped by</h4>
-  <div class="card mb-3">
-    <div class="row no-gutters">
-      <div class="col-md-1">
-        <br />
-        <img
-          src="{{ url_for('static', filename='images/Anania.jpg')}}"
-          width="100"
-          align="left"
-          class="rounded-circle"
-        />
-      </div>
-
-      <div class="col-md-10">
-        <div class="card-body">
-          <h5 class="card-title">Anania Baharu</h5>
-          <p class="card-text">ananiabaharu13@gmail.com</p>
-          <p class="card-text">https://github.com/ananiabahru</p>
-          <p class="card-text">Software Engineering Trainee @alx_africa</p>
-        </div>
-      </div>
+    <div class="col-9">
+      <p>
+        A Passionate about techs.What inspired me to do the project... This project
+        is inspiring because this is how people are going to interact wth each other
+        and reflect their ideas about it. I have been meaning to do this project
+        long time ago. Forums nowadays have a problem of being too massive with
+        different sub forums with different topics that it has gotten hard to use
+        especially the famous ones. Social media forums also have a grouping system
+        that puts similar people with similar opinions on the same group which
+        creates echo chambers where only similar opinions between the groups are
+        shared, which is not a good way of discussion since discussion is very
+        useful when different opinions communicate with each other. On this paper
+        the final outcome of the project creates a forum site that is specific to a
+        certain topic and there are no groupings that create echo chambers. The site
+        tries to help on the mentioned problems by being useful to communicate
+        openly with different idea people and to have a shared understandable
+        knowledge between the different groups.
+      </p>
     </div>
   </div>
 </div>
+<!-- end of frontend -->
 
+<!-- Database -->
 <div class="shadow p-3 mb-5 bg-body rounded">
-  <p>
-    A Passionate about techs.What inspired me to do the project... This project
-    is inspiring becuase this is how people are going to interact wth each other
-    and reflect their ideas about it. I have been meaning to do this project
-    long time ago. Forums nowadays have a problem of being too massive with
-    different sub forums with different topics that it has gotten hard to use
-    especially the famous ones. Social media forums also have a grouping system
-    that puts similar people with similar opinions on the same group which
-    creates echo chambers where only similar opinions between the groups are
-    shared, which is not a good way of discussion since discussion is very
-    useful when different opinions communicate with each other. On this paper
-    the final outcome of the project creates a forum site that is specific to a
-    certain topic and there are no groupings that create echo chambers. The site
-    tries to help on the mentioned problems by being useful to communicate
-    openly with different idea people and to have a shared understandable
-    knowledge between the different groups.
-  </p>
+  <h4>Database is developed by</h4>
+  <div class="row">
+    <div class="col-3">
+      <div class="card mb-3">
+        <div class="container text-center">
+          <div class="row row-cols-1 no-gutters">
+            <div class="col">
+              <img
+                src="{{ url_for('static', filename='images/Anania.jpg')}}"
+                width="200"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col">
+              <h5 class="card-title">Anania Baharu</h5>
+            </div>
+            <div class="col">
+              <p class="card-text">Software Engineering Trainee @<a href="https://www.alxafrica.com/">alxafrica</a></p>
+            </div>
+            <div class="col">
+              <a href="ananiabaharu13@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://github.com/ananiabahru" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-9">
+      <p>
+        A Passionate about techs.What inspired me to do the project... This project
+        is inspiring because this is how people are going to interact wth each other
+        and reflect their ideas about it. I have been meaning to do this project
+        long time ago. Forums nowadays have a problem of being too massive with
+        different sub forums with different topics that it has gotten hard to use
+        especially the famous ones. Social media forums also have a grouping system
+        that puts similar people with similar opinions on the same group which
+        creates echo chambers where only similar opinions between the groups are
+        shared, which is not a good way of discussion since discussion is very
+        useful when different opinions communicate with each other. On this paper
+        the final outcome of the project creates a forum site that is specific to a
+        certain topic and there are no groupings that create echo chambers. The site
+        tries to help on the mentioned problems by being useful to communicate
+        openly with different idea people and to have a shared understandable
+        knowledge between the different groups.
+      </p>
+    </div>
+  </div>
 </div>
-
+<!-- end of backend -->
 <br /><br />
 
 {% endblock %}
