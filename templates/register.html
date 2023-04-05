@@ -11,10 +11,10 @@ get_flashed_messages() %}
   ></button>
 </div>
 {% endfor%}
-<div class="vh-100 d-flex justify-content-center align-items-center">
+<div class="d-flex justify-content-center align-items-center">
   <div class="col-md-6 p-5 shadow-sm border rounded-3 align-items-center">
     <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
-      <h2 class="text-center mb-4 text-primary">Sign Up</h2>
+      <h2 class="text-center mb-4 text-primary">Register</h2>
       <form method="POST">
         {{form.hidden_tag ()}} {{form.name.label( class="form-label" )}}
         {{form.name(class="form-control")}} {{form.username.label(
